@@ -11,6 +11,7 @@ IF "%release%"=="" goto :END
 
 echo %release% > version.txt
 git add version.txt
+:: TODO: Add tag with %release% so that the updates.bat works
 git commit -m "%release%"
 git push
 git checkout -b release/%release%
