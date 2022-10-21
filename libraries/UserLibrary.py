@@ -1,8 +1,11 @@
 from typing import Optional
 from robot.api import logger
+from robot.api.deco import keyword, library
 
-
+@library(scope="Global", doc_format="REST")
 class UserLibrary:
+
+    @keyword
     def example_python_keyword(self, echo: Optional[str] = None):
         """This keyword is an example from a Python shared library.
         
