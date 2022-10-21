@@ -13,3 +13,7 @@ temp/
 .virtual_documents/
 */.virtual_documents/*
 testrun/*
+docs/build/
+docs/libdoc/
+docs/source/include/libdoc
+docs/source/json/
